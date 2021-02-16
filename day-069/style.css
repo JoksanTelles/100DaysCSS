@@ -1,0 +1,113 @@
+/* use only the available space inside the 400x400 frame */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.frame {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: linear-gradient(180deg, #c3b9d5, #83a4c6);
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.eye-shape {
+	width:200px;
+	height: 150px;
+	background: white;
+	border-radius: 0 200px;
+	border: 14px solid #333;
+	overflow: hidden;
+	animation: eye 3s ease-in-out infinite;
+}
+.eye-brow {
+	position: absolute;
+	width:200px;
+	height: 150px;
+	border-radius: 0 250px;
+	border: 10px solid #333;
+	z-index: 500;
+	animation: eye 3s ease-in-out infinite;
+}
+@keyframes eye {
+	50% {
+		border-radius: 0 100%;
+	}
+}
+.eye-ball {
+	width: 130px;
+	height: 130px;
+	background: linear-gradient(180deg, #eede42, #907919);
+	border-radius: 50%;
+	border: 9px solid #333;
+	position: relative;
+	top: -25px;
+	left: -25px;
+	animation: eyeball 3s ease-in-out infinite;
+}
+@keyframes eyeball{
+	25% {
+		top: 35px;
+		left: 5px;
+	}
+	50% {
+		top: 0px;
+		left: 5px;
+	}
+}
+.pupil {
+	position: relative;
+	top: 15px;
+	width: 20px;
+	height: 100px;
+	background: #333;
+	margin: auto;
+	border-radius: 100%;
+	animation: pupil 3s ease-in-out infinite;
+}
+@keyframes pupil {
+	0% {
+		border-radius: 50%;
+		with: 20px;
+	}
+	10% {
+		border-radius: 50%;
+		with: 100px;
+	}
+	50% {
+		border-radius: 50%;
+		width: 100px;
+	}
+	90% {
+		border-radius: 50%;
+		with: 100px;
+	}
+	100% {
+		border-radius: 50%;
+		with: 20px;
+	}
+}
