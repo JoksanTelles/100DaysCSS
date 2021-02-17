@@ -1,0 +1,41 @@
+/* delete the following line if no text is used */
+/* edit the line if you wanna use other fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.calendar {
+	display: flex;
+	flex-wrap: wrap;
+    width: 100%;
+	height: 100%;
+	background: #032B43;
+}
+.card {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	width: 50%;
+	height: 50%;
+	background: #053E61;
+	border: 0;
+	transform: scale(1);
+	transition: all 300ms ease-in;
+}
+.card:hover {
+	border-radius: 5px;
+	transform: scale(0.90);
+	box-shadow: inset 0px 0px 50px #010C1355;
+}
+.date, .number {
+	color: white;
+}
+.number {
+	font-size: 42px;
+	font-weight: 900;
+}

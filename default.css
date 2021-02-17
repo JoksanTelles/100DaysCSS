@@ -5,12 +5,12 @@
 /* Font base - Extra Bold (800) */
 @font-face {
     font-family: "fontbase";
-    src: url("./fonts/OpenSans-ExtraBold.ttf");
+    src: url("./src/fonts/OpenSans-ExtraBold.ttf");
     font-weight: 800;
 }
 @font-face {
     font-family: "fontbase";
-    src: url("./fonts/OpenSans-ExtraBoldItalic.ttf");
+    src: url("./src/fonts/OpenSans-ExtraBoldItalic.ttf");
     font-weight: 800;
     font-style: italic;
 }
@@ -18,12 +18,12 @@
 /* Font base - Bold (700) */
 @font-face {
     font-family: "fontbase";
-    src: url("./fonts/OpenSans-Bold.ttf");
+    src: url("./src/fonts/OpenSans-Bold.ttf");
     font-weight: 700;
 }
 @font-face {
     font-family: "fontbase";
-    src: url("./fonts/OpenSans-BoldItalic.ttf");
+    src: url("./src/fonts/OpenSans-BoldItalic.ttf");
     font-weight: 700;
     font-style: italic;
 }
@@ -31,12 +31,12 @@
 /* Font base - Semi Bold (600) */
 @font-face {
     font-family: "fontbase";
-    src: url("./fonts/OpenSans-SemiBold.ttf");
+    src: url("./src/fonts/OpenSans-SemiBold.ttf");
     font-weight: 600;
 }
 @font-face {
     font-family: "fontbase";
-    src: url("./fonts/OpenSans-SemiBoldItalic.ttf");
+    src: url("./src/fonts/OpenSans-SemiBoldItalic.ttf");
     font-weight: 600;
     font-style: italic;
 }
@@ -44,12 +44,12 @@
 /* Font base - Regular (400) */
 @font-face {
     font-family: "fontbase";
-    src: url("../fonts/OpenSans-Regular.ttf");
+    src: url("./src/fonts/OpenSans-Regular.ttf");
     font-weight: 400;
 }
 @font-face {
     font-family: "fontbase";
-    src: url("./fonts/OpenSans-Italic.ttf");
+    src: url("./src/fonts/OpenSans-Italic.ttf");
     font-weight: 400;
     font-style: italic;
 }
@@ -57,7 +57,7 @@
 /* Font base - Ligth (300) */
 @font-face {
     font-family: "fontbase";
-    src: url("./fonts/OpenSans-Light.ttf");
+    src: url("./src/fonts/OpenSans-Light.ttf");
     font-weight: 300;
 }
 @font-face {
@@ -66,6 +66,32 @@
     font-weight: 300;
     font-style: italic;
 }
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.frame {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'fontbase', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
 .back {
     border: 0;
@@ -89,4 +115,29 @@
 }
 .back:hover a {
     color: #ccc;
+}
+
+.codepen {
+    border: 0;
+    margin-top: 50px;
+    padding: 10px 25px;
+    background-color: #333;
+    color: #222;
+    border-radius: 5px;
+    transition: 400ms background-color;
+}
+.codepen .icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    margin-top: 2px;
+}
+.codepen a {
+    display: flex;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'fontbase';
+    color: white;
+    transition: 400ms color;
 }
