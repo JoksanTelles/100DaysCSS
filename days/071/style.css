@@ -1,0 +1,81 @@
+/* delete the following line if no text is used */
+/* edit the line if you wanna use other fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame {
+    background-color: #f9f9f9;
+	width: 100%;
+    max-width: 400px;
+
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+    height: 100%;
+}
+
+.title {
+    font-family: 'fontbase';
+	text-align: center;
+    margin: 0;
+	padding: 30px 25px 0;
+	font-size: 22px;
+	font-weight: 400;
+}
+
+/* Code morse area */
+#print {
+    font-family: 'fontbase';
+	width: 100%;
+	font-size: 32px;
+	text-align: center;
+    margin: auto;
+}
+
+/* Keyboard */
+.keyboard {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 5px;
+	background-color: #222;
+	padding: 20px 10px;
+}
+
+/* Keyboard buttons */
+.keyboard button {
+    font-family: 'fontbase';
+    border: 0;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #aaa;
+    width: 30px;
+    height: 30px;
+    transition: 600ms background-color;
+}
+.keyboard button:hover {
+    background-color: #444;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 368px) {
+	.title {		
+		padding: 40px 30px 0;
+		font-size: 28px;
+	}
+	#print {
+		font-size: 38px;
+	}
+}
+@media screen and (min-width: 420px) {
+	.title {		
+		padding: 50px 40px 0;
+		font-size: 32px;
+	}
+	#print {
+		font-size: 42px;
+	}
+}

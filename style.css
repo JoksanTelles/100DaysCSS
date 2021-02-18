@@ -7,6 +7,75 @@ a {
     text-decoration: none;
 }
 
+/* -------------------------------------------------
+    # Font Base
+   -------------------------------------------------*/
+
+/* Font base - Extra Bold (800) */
+@font-face {
+    font-family: "fontbase";
+    src: url("./src/fonts/OpenSans-ExtraBold.ttf");
+    font-weight: 800;
+}
+@font-face {
+    font-family: "fontbase";
+    src: url("./src/fonts/OpenSans-ExtraBoldItalic.ttf");
+    font-weight: 800;
+    font-style: italic;
+}
+
+/* Font base - Bold (700) */
+@font-face {
+    font-family: "fontbase";
+    src: url("./src/fonts/OpenSans-Bold.ttf");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "fontbase";
+    src: url("./src/fonts/OpenSans-BoldItalic.ttf");
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Font base - Semi Bold (600) */
+@font-face {
+    font-family: "fontbase";
+    src: url("./src/fonts/OpenSans-SemiBold.ttf");
+    font-weight: 600;
+}
+@font-face {
+    font-family: "fontbase";
+    src: url("./src/fonts/OpenSans-SemiBoldItalic.ttf");
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Font base - Regular (400) */
+@font-face {
+    font-family: "fontbase";
+    src: url("./src/fonts/OpenSans-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "fontbase";
+    src: url("./src/fonts/OpenSans-Italic.ttf");
+    font-weight: 400;
+    font-style: italic;
+}
+   
+/* Font base - Ligth (300) */
+@font-face {
+    font-family: "fontbase";
+    src: url("./src/fonts/OpenSans-Light.ttf");
+    font-weight: 300;
+}
+@font-face {
+    font-family: "fontbase";
+    src: url("./fonts/OpenSans-LightItalic.ttf");
+    font-weight: 300;
+    font-style: italic;
+}
+
 /* Header */
 .header .title {
     width: 100%;
@@ -15,6 +84,7 @@ a {
     padding: 50px 20px 5px;
     font-family: 'fontbase';
     color: #222;
+    text-align: center;
 }
 .header .subtitle {
     display: flex;
@@ -23,6 +93,7 @@ a {
     font-family: 'fontbase';
     font-size: 20px;
     font-weight: 400;
+    text-align: center;
     color: #555;
 }
 
@@ -33,11 +104,10 @@ a {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 50px;
+    padding: 25px;
 }
 .content .container {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
     gap: 80px;
     width: 100%;
@@ -45,11 +115,18 @@ a {
 }
 
 article {
-    width: calc(50% - 40px);
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    transition: all 500ms;
 }
-article .title {
-    font-size: 'fontbase';
-
+article:hover {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+article .title,
+article .subtitle {
+    font-family: 'fontbase';
 }
 .image {
     border-radius: 10px;
@@ -59,11 +136,9 @@ article .title {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
     transition: all 300ms ease-in-out;
 }
 article:hover .image {
-    margin-top: 30px;
     box-shadow: 10px 10px 50px rgba(0,0,0,0.25);
 }
 .image img {
@@ -73,7 +148,7 @@ article:hover .image {
 article .title {
     display: inline-block;
     padding: 15px 10px 0px;
-    font-size: 24px;
+    font-size: 18px;
     color: #222;
     transition: 300ms color;
 }
@@ -82,6 +157,21 @@ article .title:hover {
 }
 article .subtitle {
     padding: 0 12px;
-    font-size: 16px;
+    font-size: 14px;
     color: #222;
+}
+
+@media screen and (min-width: 768px) {
+    .content {
+        padding: 50px;
+    }
+    article {
+        width: calc(50% - 40px);
+    }
+    article .title {
+        font-size: 24px;
+    }
+    article .subtitle {
+        font-size: 16px;
+    }
 }
