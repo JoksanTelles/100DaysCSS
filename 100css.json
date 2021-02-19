@@ -1,0 +1,26 @@
+[
+    {
+        "id":    "069",
+        "name":  "Eye cat animation",
+        "url":   "./day/069",
+        "image": "./src/img/day-069.jpg"
+    },
+    {
+        "id":    "070",
+        "name":  "Calendar with simple hover animation",
+        "url":   "./day/070",
+        "image": "./src/img/day-070.jpg"
+    },
+    {
+        "id":    "071",
+        "name":  "Morse Code Keyboard Translator",
+        "url":   "./day/071",
+        "image": "./src/img/day-071.jpg"
+    },
+    {
+        "id":    "072",
+        "name":  "Circular animation",
+        "url":   "./day/072",
+        "image": "./src/img/day-072.jpg"
+    }
+]
