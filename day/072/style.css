@@ -14,7 +14,7 @@
     position: absolute;
     margin: calc((400px - 250px)/2);
     filter: blur(0.5px);
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
 }
 .container .x1 {

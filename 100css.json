@@ -22,5 +22,11 @@
         "name":  "Circular animation",
         "url":   "./day/072",
         "image": "./src/img/day-072.jpg"
+    },
+    {
+        "id":    "073",
+        "name":  "Word Slider, simple animation Slider Animation",
+        "url":   "./day/073",
+        "image": "./src/img/day-073.jpg"
     }
 ]
