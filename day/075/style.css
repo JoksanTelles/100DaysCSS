@@ -52,6 +52,6 @@
 @keyframes rotate {
 	50% {
 		transform: rotateX(360deg)
-							 rotateY(170deg);
+				   rotateY(170deg);
 	}
 }

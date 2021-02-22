@@ -28,5 +28,17 @@
         "name":  "Word Slider, simple animation Slider Animation",
         "url":   "./day/073",
         "image": "./src/img/day-073.jpg"
+    },
+    {
+        "id":    "073",
+        "name":  "Pagination",
+        "url":   "./day/073",
+        "image": "./src/img/day-073.jpg"
+    },
+    {
+        "id":    "073",
+        "name":  "Circle Animation Rotation",
+        "url":   "./day/073",
+        "image": "./src/img/day-073.jpg"
     }
 ]
